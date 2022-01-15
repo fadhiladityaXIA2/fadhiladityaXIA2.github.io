@@ -1,0 +1,306 @@
+/* NAVIGASI */
+.judul {
+				position: fixed;
+				width: 100%;
+				margin: 20px auto 0;
+				padding: 0 0 -20px;
+				background-color: rgb(192,207,219);
+				display: flex;
+				justify-content: space-around;
+				box-sizing: border-box;
+				border-bottom: 3px solid #555;
+				z-index: 2;
+}
+.judul .nama {
+				font-size: 50px;
+				font-family: 'Bebas Neue', cursive;
+				margin-top: 5px;
+}
+.judul ul li {
+				display: inline-block;
+				margin-right: 30px;
+				padding-top: 16px;
+}
+.judul ul li a {
+				text-decoration: none;
+				font-size: 20px;
+				color: black;
+}
+/* AKHIR NAVIGASI */
+
+/* CONTENT */
+				.pembukaan {
+								width: 100%;
+								margin: -20px auto;
+								background-color: rgba(236,236,236);	
+								display: flex;
+								flex-direction: column;
+				}
+				.title1 {
+								font-family: 'DM Sans', sans-serif;
+								color: #444;
+								font-size: 100px;
+								letter-spacing: 2px;						
+								margin: 20px 0 0 40px;
+								padding-top: 70px;
+				}
+				.title {
+								font-family: 'DM Sans', sans-serif;
+								color: #444;
+								font-size: 100px;
+								letter-spacing: 2px;						
+								margin: 5px 0 0 40px;
+			   	}
+			   h3 {
+			   				margin-left: 40px;
+			   				padding: 10px 0 10px 20px;
+			   				width: 300px;
+			   				background-color: rgb(192,207,219);
+			   }
+			   .pembukaan .tombol {
+			   				background-color: rgb(222,226,230);
+			   				margin: auto;			   						   	
+			   }
+			   .pembukaan .mulai {
+			   				text-decoration: none;
+			   				display: flex;
+			   				justify-content: center;
+			   				line-height: 50px;
+			   				margin: 20px auto;
+			   				width: 120px;
+			   				height: 50px;
+			   				background-color: rgb(222,226,230);
+			   				border: 2px solid white;
+			   				font-family: 'Poppins', sans-serif;
+			   				color: black;
+			   				font-weight: bold;
+			   }
+			   .pembukaan .komputer0{
+			   				margin: auto;
+			   				width: 500px;
+			   				height: 500px;
+			   }
+			   .pembukaan .title2 {
+			   				font-family: 'DM Sans', sans-serif;
+			   				font-size: 85px;
+			   				color: #444;
+			   				letter-spacing: 2px;
+			   				margin: 60px 40px 0px 40px;
+			   }
+			   .pembukaan .title3 {
+			   				font-family: 'DM Sans', sans-serif;
+			   				font-size: 85px;
+			   				color: #444;
+			   				letter-spacing: 2px;
+			   				line-height: 89px;
+			   				margin: 0 0 0 40px;
+			   }
+			   .pembukaan .pengertian {
+			   				font-family: 'Poppins', sans-serif;
+			   				display: flex;
+			   				align-item: center;
+			   				justify-content: center;
+			   				text-align: center;
+			   				font-size: 40px;
+			   				width: 80%;
+			   				padding: 60px 20px 60px 20px;
+			   				background-color: rgb(222,226,230); 
+			   				margin: 30px auto;
+			   				line-height: 50px;
+			   				font-weight: bold;
+			   				color: #888;
+			   }
+			   
+.device {
+				width: 100%;
+				padding: 50px 0 50px 0;
+				margin-top: 50px;
+				background-color: rgb(217,217,217);
+				font-family: 'Bebas Neue', cursive;
+				text-align: center;
+				font-size: 85px;
+				letter-spacing: 3px;
+				color: #444;
+}
+.device .note {
+				font-size: 20px;
+				letter-spacing: 2px;
+}
+
+.footer {
+				width: 100%;
+				padding: 20px 0 20px 0;
+				margin-top: 50px;
+				background-color: rgb(192,207,219);
+				font-family: 'Dongle', sans-serif;
+				text-align: center;
+				font-size: 40px;
+				color: #444;
+}
+/* CARD */
+
+.card {
+				position: relative;
+				padding: 0 0 20px 0;
+				margin:50px auto;
+				width: 80%;
+				height: 300px;
+				border-radius: 20px;
+				display: flex;
+				align-item: center;
+				border-radius: 20px;
+				transition: .5s;
+}
+.card .circle {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 20px;
+				overflow: hidden;
+}
+.card .circle::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgb(192,207,219);
+				clip-path: circle(120px at center);
+				transition: .5s;
+}
+.card:hover .circle:before {
+				clip-path: circle(700px at center);
+				background: rgb(222,226,230);
+}
+.card .anim {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				pointer-events: none;
+				transition: .5s;
+}
+.card:hover .anim {
+				left: 72%;
+				height: 450px;
+				width: 350px;
+}
+.card .content {
+				font-family: 'Poppins', sans-serif;
+				position: relative;
+				width: 50%;
+				left: 20%;
+				padding: 20px 20px 20px 20px;
+				transition: .5s;
+				opacity: 0;
+				visibility: hidden;
+				font-size: 23px;
+				line-height: 26px;
+			 	font-weight: bold;
+			  color: #888;
+}
+.card:hover .content {
+				left: 0;
+				opacity: 1;
+				visibility: visible;
+}
+.card .yoi {
+				padding: 10px;
+				font-size: 30px;
+				font-family: 'DM Sans', sans-serif;
+}
+
+
+
+/* END CARD */
+
+
+
+			 
+/* AKHIR CONTENT */
+
+
+
+
+
+/* MEDIAQUERY */
+
+@media(max-width: 768px){
+				.judul {
+								width: 100%;
+				}
+@media(max-width: 768px){
+				.judul .nama {
+								font-size: 30px;
+								margin-top: 3px;
+				}
+@media(max-width: 768px){
+				.judul ul li{
+								margin-top: 5px;
+								padding-top: 3px;
+				}
+@media(max-width: 768px){
+				.judul ul li a {
+								font-size: 13px;
+				}
+@media(max-width: 768px){
+				.title,
+				.title1  {
+								font-size: 50px;
+				}
+@media(max-width: 768px){
+				h3 {
+								font-size: 10px;
+								width: 150px;
+								padding: 5px 0 5px 10px;
+				}
+@media(max-width: 768px){
+				.pembukaan .komputer0{
+								width: 250px;
+								height: 250px;
+				}
+
+@media(max-width: 768px){
+				.pembukaan .title3,
+				.pembukaan .title2 {
+								font-size: 40px;
+								line-height: 40px;
+				}
+@media(max-width: 768px){
+ 				.pembukaan .pengertian {
+ 								font-size: 20px;
+ 								line-height: 25px;
+ 								padding: 30px 20px 30px 20px;
+ 				}
+ 				.device {
+ 								font-size: 40px;
+ 								padding: 25px 0 25px 0;
+ 				}
+ 				.card .content {
+ 								font-size: 13px;
+ 				}
+ 				.card .anim {
+ 								width: 200px;
+ 								height: 300px;
+ 				}
+ 				.card:hover .anim {
+ 								width: 200px;
+ 								height: 300px;
+ 								left: 80%;
+ 				}
+ 				.card .content {
+ 								line-height: 19px;
+ 								padding: 20px 20px 25px 16px;
+ 				}
+ 				.device .note {
+ 								font-size: 10px;
+ 								letter-spacing: 1px;
+ 				}
+ 				.footer {
+ 								font-size: 20px;
+ 				}
+}
+/* AKHIR MEDIAQUERY */
